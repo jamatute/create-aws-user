@@ -1,0 +1,4 @@
+---
+# defaults file for create-aws-user
+temp_password:
+iam_users:
