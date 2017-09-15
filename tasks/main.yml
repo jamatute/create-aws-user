@@ -7,4 +7,4 @@
     password: "{{ temp_password }}"
     update_password: on_create
     state: absent
-  with_items: "{{ iam_users }}"
+  with_items: "{{ iam.users }}"

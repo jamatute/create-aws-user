@@ -9,7 +9,8 @@ Boto installed
 ## Role Variables
 
 * `temp_password`: Set up a temporary password
-* `iam_users`: List of users
+* `iam`: Dictionary with information of the IAM
+  * `users`: List of users
 
 ## Dependencies
 
