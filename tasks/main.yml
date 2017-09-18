@@ -1,0 +1,10 @@
+---
+# tasks file for create-aws-user
+- name: Create AWS Users
+  iam:
+    iam_type: user
+    name: "{{ item }}"
+    password: "{{ temp_password }}"
+    update_password: on_create
+    state: present
+  with_items: "{{ iam.users }}"
